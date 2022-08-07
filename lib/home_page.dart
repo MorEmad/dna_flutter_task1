@@ -10,15 +10,15 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<String> imagesList = [
-    'https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175__340.jpg',
-    'https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg',
-    'https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg',
-    'https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954__340.jpg',
-    'https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276__340.jpg',
-    'https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149__340.jpg',
-    'https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287__340.jpg',
-    'https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492__340.jpg',
-    'https://cdn.pixabay.com/photo/2014/08/01/00/08/pier-407252__340.jpg',
+  'images/DNA1.jpg',
+    'images/DNA2.jpg',
+    'images/DNA3.jpg',
+    'images/DNA4.jpg',
+    'images/DNA5.jpg',
+    'images/DNA6.jpg',
+    'images/DNA7.jpg',
+    'images/DNA8.jpg',
+    'images/DNA9.jpg',
   ];
 
   @override
@@ -165,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                      decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(15),
                        image: DecorationImage(
-                         image: NetworkImage(imagesList[index]),
+                         image: new ExactAssetImage(imagesList[index]),
                          fit: BoxFit.cover,
                        ),
                      ),
